@@ -1,0 +1,461 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFF9D2;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    border: 1px solid;
+    padding: 14px 24px;
+    background-color: #8CC0EB;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+.icons img{
+    width: 30px;
+    height: auto;
+}
+
+nav .log a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+nav .log a:hover{
+    background-color: black;
+}
+
+nav .sign a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+nav .sign a:hover{
+    background-color: black;
+}
+
+
+.Eng{
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.Eng img{
+    width: 18px;
+    height: auto;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    border: 5px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+section .menubar ul{
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+    padding: 14px 20px;
+    list-style: none;
+}
+
+
+section .menubar a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+section .menubar a:hover{
+    background-color: #8CC0EB;
+}
+
+.anc{
+    width: auto;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.anc .ancpic{
+    border: 2px solid black;
+    width: 100%;
+    height: 90%;
+    background-image: url(pic1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.anc .ancpic h1{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.anc .ancpic p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn1{
+    align-self: center;
+    position: relative;
+    margin-top: 30px;
+    left: 47%;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.btn1:hover{
+    background-color: #8CC0EB;
+}
+
+.aboutanc{
+    width: auto;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.aboutanc .aboutancpic{
+    border: 2px solid black;
+    width: 100%;
+    height: 90%;
+    background-image: url(pic2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aboutanc .aboutancpic .about{
+    margin-top: 90px;
+    margin-left: 250px;
+    border: 2px solid black;
+    padding: 10px 90px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.about-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 40px;
+    height: 57vh;
+
+}
+
+.imggroup{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+
+}
+
+.kid-img3{
+    width: 40%;
+    margin-left: 40px;
+}
+
+.textabout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 300px;
+    bottom: 50px;
+    text-align: center;
+    text-indent: 10px;
+}
+
+.textabout h1{
+    border: 2px solid black;
+    padding: 10px 90px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.textin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    width: 600px;
+    border-bottom: 2px solid black;
+    flex-direction: column;
+    position: relative;
+    left: 650px;
+
+}
+
+.cardmain{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.headtext{
+    font-weight: bold;
+    color: #8CC0EB;
+    margin-top: 10px;
+}
+
+.textp{
+    text-indent: 5px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card2{
+    width: 160px;
+}
+
+.card3{
+    width: 180px;
+}
+
+.card4{
+    width: 160px;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 35vh; /* ความสูงปรับตามขนาดหน้าจอ */
+    background-image: url('playground.png'); /* 👈 สั่งใส่รูปพื้นหลังตรงนี้ */
+    background-color: #ccc; /* สีสำรองกรณีรูปยังไม่โหลด */
+    background-position: center;
+    background-size: cover;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    
+    /* สั่งจัดงานในแบนเนอร์เพื่อให้ปุ่มลอยตัว */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* ผลักปุ่มไปฝั่งซ้าย */
+    padding-left: 5%;
+}
+
+/* กล่องข้อความสีขาวที่ลอยอยู่บนแบนเนอร์ */
+.banner-button {
+    background-color: white;
+    padding: 20px 100px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    right: 500px;
+    top: 150px;
+}
+
+/* =========================================
+   5. CARD GRID (ส่วนตารางการ์ด 4 ใบด้านล่าง)
+   ========================================= */
+.content-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* จัดกลุ่มการ์ดให้อยู่กึ่งกลางหน้าจอ */
+}
+
+/* ⚡ นำเทคนิค CSS Grid ที่เราเพิ่งคุยกันมาแบ่ง 4 คอลัมน์เท่าๆ กัน */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* แบ่งเค้กเป็น 4 ช่องเท่ากันด้วย 1fr */
+    gap: 30px; /* ระยะห่างระหว่างการ์ด */
+}
+
+/* ตัวการ์ดแต่ละใบ */
+.feature-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column; /* จัดองค์ประกอบข้างในการ์ดจากบนลงล่าง */
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* กล่องใส่รูปภาพที่อยู่ด้านบนของการ์ด */
+.card-thumb {
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* สั่งให้รูปตัดพอดีช่อง ไม่บิดเบี้ยว */
+}
+
+/* ตัวหนังสือหัวข้อใต้ภาพ */
+.card-title {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+/* =========================================
+   🗂️ LOWER CONTENT: โครงสร้างแยกฝั่งซ้าย-ขวา
+   ========================================= */
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ⚡ รอบนี้ใช้ CSS Grid แบ่งสัดส่วนเค้ก ฝั่งซ้าย 1 ส่วน ฝั่งขวา 2 ส่วนกว้างๆ */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 👈 ฝั่งการ์ดจะเล็กกว่าฝั่งแผนที่ */
+    gap: 40px; /* ระยะห่างระหว่างการ์ดกับแผนที่ */
+    align-items: start;
+}
+
+/* --- 💳 สไตล์การ์ดฝั่งซ้าย (Guyteach Contact Card) --- */
+.contact-card {
+    background-color: white;
+    border: 2px solid #BFBFBF;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #EEEEEE;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.profile-avatar {
+    font-size: 30px;
+    color: #666;
+}
+
+/* รายการช่องทางติดต่อภายในลิสต์ */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-list li i {
+    font-size: 22px;
+    width: 30px; /* คุมความกว้างไอคอนให้ตรงกันในแนวตั้ง */
+    text-align: center;
+}
+
+/* ใส่สีไอคอนแต่ละอันตามตัวอย่างในรูป */
+.contact-list li .fa-phone-alt { color: #555555; }
+.contact-list li .fa-facebook { color: #1877F2; }
+.contact-list li .fa-instagram { color: #E1306C; }
+.contact-list li .fa-envelope { color: #7F7F7F; }
+
+/* --- 🗺️ สไตล์กล่องแผนที่ฝั่งขวา (ปรับสำหรับ Maps จริง) --- */
+.map-box {
+    width: 100%;
+}
+
+/* สั่งตกแต่งแท็ก iframe (ตัวแผนที่จริง) ที่อยู่ข้างในกล่อง map-box */
+.map-box iframe {
+    width: 100%;            /* ให้แผนที่กว้างเต็มพื้นที่กล่อง */
+    height: 350px;          /* ความสูงของแผนที่ (ปรับเพิ่ม-ลดตัวเลขได้ตามชอบ) */
+    border: 8px solid #C3C3C3 !important; /* ใส่เส้นขอบหนาสีเทาให้สวยงามตามแบบของคุณกาย */
+    border-radius: 8px;     /* ทำมุมโค้งมนให้ตัวแผนที่นิดหน่อยดูทันสมัยขึ้น */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* เติมเงาละมุนๆ ด้านล่างแผนที่ */
+}
