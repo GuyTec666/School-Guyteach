@@ -1,4 +1,4 @@
-*{
+﻿*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -161,53 +161,72 @@ section .menubar a:hover{
     background-color: #8CC0EB;
 }
 
-.aboutanc{
-    width: auto;
-    height: 40vh;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    
-}
+/* --- แก้ไขหน้า About Us --- */
 
-.aboutanc .aboutancpic{
+.aboutanc .aboutancpic {
     border: 2px solid black;
     width: 100%;
     height: 90%;
     background-image: url(pic2.jpg);
     background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: flex; /* ใช้ flex */
+    align-items: center; /* จัดกลางแนวตั้ง */
+    justify-content: center; /* จัดกลางแนวนอน - ลบ margin-left 250px ออก */
 }
 
-.aboutanc .aboutancpic .about{
-    margin-top: 90px;
-    margin-left: 250px;
+.aboutanc .aboutancpic .about {
+    /* ลบ margin-top และ margin-left ออก */
     border: 2px solid black;
     padding: 10px 90px;
     border-radius: 10px;
     background-color: white;
-
 }
 
-.about-section{
+.about-section {
     width: 100%;
+    max-width: 1200px; /* คุมความกว้างไม่ให้แผ่จนเกินไป */
+    margin: 0 auto;    /* จัดให้อยู่กลางจอ */
     display: flex;
+    flex-wrap: wrap;   /* ถ้าจอเล็กให้ขึ้นบรรทัดใหม่ */
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 60px 40px;
-    height: 57vh;
-
+    padding: 60px 20px;
+    height: auto;      /* เปลี่ยนจาก 57vh เป็น auto เพื่อให้รองรับเนื้อหา */
 }
 
-.imggroup{
+.imggroup {
     display: flex;
     flex-wrap: wrap;
-    gap:5px;
+    gap: 10px;
+    justify-content: center;
+    flex: 1;           /* ให้พื้นที่ฝั่งรูป */
+    min-width: 300px;
+}
 
+.imggroup img {
+    max-width: 150px;  /* คุมขนาดรูปเด็ก */
+    height: auto;
+    border-radius: 10px;
+}
+
+.textabout {
+    flex: 1;           /* ให้พื้นที่ฝั่งข้อความ */
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* ลบ position: relative; right: 200px; bottom: 50px; ออกให้หมด */
+}
+
+.textabout h1 {
+    border: 2px solid black;
+    padding: 10px 90px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
 }
 
 .kid-img3{
@@ -215,48 +234,31 @@ section .menubar a:hover{
     margin-left: 40px;
 }
 
-.textabout{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    right: 200px;
-    bottom: 50px;
-    text-align: center;
-    text-indent: 10px;
-}
-
-.textabout h1{
-    border: 2px solid black;
-    padding: 10px 90px;
-    border-radius: 10px;
-    background-color: white;
-}
 
 main{
     display: flex;
     flex-direction: column;
 }
 
-.textin{
+.textin {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 35px;
-    width: 600px;
+    margin: 35px auto;      /* ใช้ auto เพื่อให้อยู่กลางจอเสมอ */
+    width: fit-content;     /* ให้กว้างเท่าเนื้อหา */
     border-bottom: 2px solid black;
-    flex-direction: column;
-    position: relative;
-    left: 650px;
-
+    padding-bottom: 10px;
+    /* ลบ position: relative; left: 650px; ออก */
 }
 
-.cardmain{
+.cardmain {
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
+    /* ใช้ repeat(auto-fit...) เพื่อให้จำนวนคอลัมน์ปรับตามความกว้างจออัตโนมัติ */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 40px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto; /* จัดกลาง */
 }
 
 .card{
